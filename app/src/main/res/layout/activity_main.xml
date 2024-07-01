@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stopclock"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#E23C75"
+        android:textColor="@color/white"
+        android:text="00:00:00"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTimer"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:backgroundTint="#DD5EF2"
+        android:textColor="@color/white"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:backgroundTint="#24A4DE"
+        android:textColor="@color/white"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStop"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:backgroundTint="#ED1B1B"
+        android:textColor="@color/white"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btnLap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReset"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:backgroundTint="#ED6439"
+        android:textColor="@color/white"
+        android:text="Lap"
+        android:enabled="false" />
+
+    <ListView
+        android:id="@+id/lvLaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLap"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>
